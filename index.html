@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Number Game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: #C8F9FD;
+            font-size: 2rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 3rem;
+        }
+        img{
+            display: flex;
+            position: relative;
+            left: 30%;
+            margin: 40px 0px;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+        button{
+            /* width: 200px; */
+            height: 30px;
+            background-color: #4C009B;
+            color: white;
+            font-weight: 700;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header"><h1>Guess The Number (1 - 100)</h1></div>
+    <div id="input"><input type="number" name="input_number" id="input_number"><button id="check_button">CHECK</button></div>
+    <div class="image"><img src="img/1.webp" alt="" width="40%"></div>
+    <div class="footer"><h3>Write the number</h3></div>
+    <div class="footer2"><p>Number of attempts: <span id="number_attempts"> 7 </span></p></div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
